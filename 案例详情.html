@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例详情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+        <div class="gy_banner">
+            <img src="images/al_01.jpg">
+        </div>
+
+
+
+        <div class="w1200">
+            <div class="mbx ">
+                <a href="/">首页 &gt; </a><a href="#" title="新闻中心">成功案例</a> &gt;<a href="#" title="新闻中心">武汉在建幼儿园</a>
+            </div>
+        </div>
+
+        <div class="alxq">
+            <div class="w1200">
+                <div class="xq_img fl">
+                    <div class="xq_img_big">
+                        <ul>
+                            <li><img src='images/aixq_01.jpg' width='424' height='254' /></li>
+                            <li><img src='images/aixq_01.jpg' width='424' height='254' /></li>
+                            <li><img src='images/aixq_01.jpg' width='424' height='254' /></li>
+                            <li><img src='images/aixq_01.jpg' width='424' height='254' /></li>
+                            <li><img src='images/aixq_01.jpg' width='424' height='254' /></li>
+                            <li><img src='images/aixq_01.jpg' width='424' height='254' /></li>
+                        </ul>
+                    </div>
+                    <div class="xq_img_sm mt15">
+                        <span class="xq_goL"><img src="images/xq_goL.jpg" /></span>
+                        <div class="box">
+                            <ul>
+                                <li><span></span><img src='images/aixq_01.jpg' width='107' height='64' /></li>
+                                <li><span></span><img src='images/aixq_01.jpg' width='107' height='64' /></li>
+                                <li><span></span><img src='images/aixq_01.jpg' width='107' height='64' /></li>
+                                <li><span></span><img src='images/aixq_01.jpg' width='107' height='64' /></li>
+                                <li><span></span><img src='images/aixq_01.jpg' width='107' height='64' /></li>
+                                <li><span></span><img src='images/aixq_01.jpg' width='107' height='64' /></li>
+                            </ul>
+                        </div>
+                        <span class="xq_goR"><img src="images/xq_goR.jpg" /></span>
+                    </div>
+                </div>
+
+                <div class="fr">
+                    <div>
+                        <h5 class="fl"><span>武汉在建幼儿园</span><br>Wuhan is under construction in kindergarten</h5>
+                        <a class="fr" href="#">返回列表</a>
+
+                    </div>
+                    <p>利用我们大理石系列的墙板已经罗马柱做走道，顶面用的3D打印画，整个给人一种明朗，简约又不失气派的感觉，根据孩子不同的喜好，让孩子在学习的同时，也能感受到温馨和乐趣。</p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="al_jj w1200">
+            <img src="images/alxq_03.jpg">
+
+            <div class="bjq">
+                幼儿园所用的墙面材料富有弹性，全面维护儿童防撞伤安全；墙面污渍、画痕可擦洗，不易变形，保障环境快速清洁。墙面材料图案丰富，营造美好欢快氛围。
+
+                孩子是祖国的未来，民族的希望，因此材料必须绿色环保安全，不含任何甲醛等有害物质，德居沃家聚合低碳墙板，防火等级高， 并且安装便捷、即装即住、防潮防腐、性能卓越、同时节约空间、多彩体验保温隔热、司机节能 降音降噪。
+            </div>
+            <div></div>
+        </div>
+
+        <div class="al_bottom">
+                <div class="w_succ_b">
+                    <div class="w1200">
+                        <h2 class="w_title_h2">The solution</h2>
+                        <p class="w_title_p" style="width:117px;">解决方案</p>
+                        <ul class="clearfix">
+                            <a href=""><li>
+                                <img src="images/succ_img1.jpg" height="232" width="387" alt="">
+                                <p>蒙德利国际幼儿园</p>
+                            </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <img src="images/succ_img2.jpg" height="232" width="387" alt="">
+                                    <p>环北商贸城</p>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <img src="images/succ_img3.jpg" height="232" width="387" alt="">
+                                    <p>空分大厦</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <a href="" class="w_more_al">前往查看更多案例 >></a>
+                    </div>
+                </div>
+
+        </div>
+
+
+
+
+</body>
+    <script src="js/pic_tab.js"></script>
+    <script type="text/javascript">
+        $('.xq_img').banqh({
+            box:".xq_img",//总框架
+            pic:".xq_img_big",//大图框架
+            pnum:".box",//小图框架
+            prev_btn:".xq_goL",//小图左箭头
+            next_btn:".xq_goR",//小图右箭头
+            autoplay:true,//是否自动播放
+            interTime:5000,//图片自动切换间隔
+            delayTime:400,//切换一张图片时间
+            order:0,//当前显示的图片（从0开始）
+            picdire:true,//大图滚动方向（true为水平方向滚动）
+            mindire:true,//小图滚动方向（true为水平方向滚动）
+            min_picnum:3,//小图显示数量
+        })
+    </script>
+</html>

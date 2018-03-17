@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+                <div class="gy_banner">
+                        <img src="images/news_01.jpg">
+                </div>
+
+                <div class="xwxq">
+                    <div class="w1200">
+                        <div class="mbx ">
+                            <a href="/">首页 &gt; </a><a href="#" title="新闻中心">新闻中心</a> &gt;<a href="#" >2017年北京站家居设计展</a>
+                        </div>
+
+                        <div class="fl">
+                            <h5>2017年北京站家居设计展</h5>
+                            <p>Beijing Railway Station furniture design exhibition 2017</p>
+                            <p>
+                                <span>2015-05-12</span>
+                                <span style="margin-left:195px">来自：德居沃家</span>
+                                <span class="fr">
+                                    <span class="sharebtn weibo share" onclick="javascript:share_action(event);bShare.share(event,'sinaminiblog',1);"></span>
+                                    <span class="sharebtn weixin share weixinpop_click_area_ignore" onclick="javascript:share_action(event);bShare.share(event,'weixin',1);weixin_share(event);" ;=""></span>
+                                    <span class="sharebtn mshare share" onclick="javascript:share_action(event);bShare.more(event)" ;=""></span>
+                                </span>
+                            </p>
+                            <div class="bjq">
+                                <div style="border-bottom: solid #dfdfdf 1px;height:51px;margin-bottom:20px;">
+                                    <a href="#" class="retrun fr">返回列表</a><br/>
+                                </div>
+                                <p>----图文为转载内容<br/>----由湖北德居沃家有限公司编辑整理</p>
+                            </div>
+
+                        </div>
+                        <div class="fr">
+                            <h5>精彩推荐</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/xq_02.jpg" class="fl">
+                                        <p class="fr">2017年设计类大赛获奖的家具作品的展示</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/xq_02.jpg" class="fl">
+                                        <p class="fr">2017年设计类大赛获奖的家具作品的展示</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/xq_02.jpg" class="fl">
+                                        <p class="fr">2017年设计类大赛获奖的家具作品的展示</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/xq_02.jpg" class="fl">
+                                        <p class="fr">2017年设计类大赛获奖的家具作品的展示</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="xq_last">
+                            <p><span>文本标签：</span> 北京家具  织布椅子  英国设计师  树脂硬化物</p>
+                            <p><a href="#">[上一篇] 2017北京站家居设计展</a></p>
+                            <p><a href="#">[下一篇] 2017北京站家居设计展</a></p>
+                        </div>
+                    </div>
+                </div>
+</body>
+<script type="text/javascript" src="js/buttonLite.js"></script>
+<script>
+    bShare.boxConfigWX.position = 'absolute';
+    bShare.boxConfigWX.boxHeight = $('#bsWXBox').height(274);
+    bShare.boxConfigWX.boxWidth = $('#bsWXBox').width();
+    bShare.boxConfigWX.hasTop = false;
+
+    var weixin_share = function (event) {
+        var ele = event.target || event.srcElement;
+        var offset = $(ele).offset();
+        $('#bsWXBox').show().css({ 'left': offset.left - 103, 'top': offset.top + 20 });
+    }
+    var share_action = function (event) {
+        var ele = event.target || event.srcElement;
+        var listboxwp = $(ele).parent();
+
+        var title = $.trim(listboxwp.find('h3 a:first').text());
+        var summary = $.trim(listboxwp.find('.conwp p').text()) + " ";
+        var href = $.trim(listboxwp.find('h3 a:first').attr('href'));
+        console.log(title, href, summary);
+        bShare.params.title = title;
+        bShare.params.url = href; // 获取文章链接
+        bShare.params.summary = summary; // 获取文章摘要
+    }
+</script>
+<!-- baidu 分享end -->
+<script type="text/javascript">
+
+    //点击其他地方消失
+    $('body').bind("click", function (e) {
+        var curele = e.srcElement || e.target;
+        curele = $(curele);
+        //更多
+
+        var handle = $('#bsWXBox').find(curele).length;
+        if (handle == 0) { $('#bsWXBox').hide() }
+
+    });
+</script>
+<!-- 微信  pop-->
+<div id="bsWXBox" class="weixinpop bsWXBox weixinpop_click_area" style="z-index: 1000; display: none; left: 517.517px; top: 1615.22px; margin-left: 0px; margin-top: 0px; position: absolute; height: 274px; width: 217px;">
+
+    <div class="weixinpop_frame_box"><div class="bsFrameDiv" id="bsFrameDiv"><div style="height: 274px; width: 217px; display: block;"><img style="width:178px;height:178px;margin:21px;display:inline-block;" src="%E6%96%B0%E6%B5%AA%E6%B8%B8%E6%88%8F_%E6%9C%80%E5%A4%A7%E4%B8%AD%E6%96%87%E6%B8%B8%E6%88%8F%E5%AA%92%E4%BD%93_files/barCode.jpg"></div></div>
+        <div class="bsClose" style="display: none; top: 8px; right: 20px;"></div>
+        <span class="bsPlatName" style="display: none"></span>
+    </div>
+    <div class="t">用微信扫描二维码<br>分享至微信朋友圈</div>
+
+</div>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div class="gy_banner">
+        <img src="images/gy_01.jpg">
+    </div>
+    <div class="w1200">
+            <div class="mbx ">
+                <a href="/">首页 &gt; </a><a href="#" title="关于我们">关于我们</a> &gt;
+            </div>
+
+            <div class="about_us">
+                <h2 class="tit">About us<br/><i>|</i><span>关于我们</span><i>|</i></h2>
+                <div class="fl">
+                    <h3>湖北德居沃家新材料科技有限公司</h3>
+                    <h5>湖北德居沃家新材料科技有限公司</h5>
+                    <p>湖北德居沃家新材料科技有限公司，是集科研、生产、销售为一体的高科技环保装饰材料企业，专注于新型竹木纤维环保材料的研究与应用。</p>
+                    <p>目前德居沃家不仅将竹木纤维材料应用于木门、集成吊顶、墙面装饰等行业，还积极智力新型空间的创意和创造。与国内多家大型住宅、商业地产公司达成战略合作伙伴关系。在中国，德居沃家凭借全新环保理念与产品开创智慧家居，公共空间装饰新格局。</p>
+
+                </div>
+                <div class="fr">
+                    <img src="images/gy_02.jpg">
+                </div>
+            </div>
+
+            <div class="fc">
+                <h2 class="tit">Corporate Style<br/><i>|</i><span>企业风采</span><i>|</i></h2>
+
+                <ul>
+                    <li>
+                        <img src="images/fc_01.jpg">
+                        <div>企业风采</div>
+                    </li>
+                    <li>
+                        <img src="images/fc_01.jpg">
+                        <div>企业风采</div>
+                    </li>
+                    <li>
+                        <img src="images/fc_01.jpg">
+                        <div>企业风采</div>
+                    </li>
+                    <li>
+                        <img src="images/fc_01.jpg">
+                        <div>企业风采</div>
+                    </li>
+                    <li>
+                        <img src="images/fc_01.jpg">
+                        <div>企业风采</div>
+                    </li>
+                    <li>
+                        <img src="images/fc_01.jpg">
+                        <div>企业风采</div>
+                    </li>
+                </ul>
+
+            </div>
+    </div>
+
+    <div class="ry">
+        <div class="w1200">
+            <h2 class="tit">Enterprise honor<br/><i>|</i><span>企业荣誉</span><i>|</i></h2>
+            <p>“德居沃家”坚定的将“为客户供应最优质的集成墙板、为客户提供最具价值的消费服务”<br/>作为企业的核心价值，全天候快速响应客户需求。</p>
+
+            <div class="gywm_ry_banner">
+                <div class="gywm_prev fl">
+                    <span></span>
+                </div>
+                <div class="gywm_ry_banner_ul fl">
+                    <ul>
+
+                        <li><img src="images/gy_05.jpg" alt=""/></li>
+                        <li><img src="images/gy_05.jpg" alt=""/></li>
+                        <li><img src="images/gy_05.jpg" alt=""/></li>
+                        <li><img src="images/gy_05.jpg" alt=""/></li>
+                        <li><img src="images/gy_05.jpg" alt=""/></li>
+                        <li><img src="images/gy_05.jpg" alt=""/></li>
+
+                    </ul>
+                </div>
+                <div class="gywm_next fr">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="logo_list w1200">
+            <h2 class="tit">Enterprise honor<br/><i>|</i><span>企业荣誉</span><i>|</i></h2>
+            <ul>
+                <li>
+                    <img src="images/logo_01.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_02.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_03.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_04.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_05.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_06.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_07.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_08.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_09.jpg">
+                </li>
+                <li>
+                    <img src="images/logo_10.jpg">
+                </li>
+            </ul>
+        </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var n=$('.gywm_ry_banner li').length;
+        var l=$('.gywm_ry_banner li').width();
+        var w=n*l;
+        $('.gywm_ry_banner ul').width(w);
+        //定时器
+        var t=null;
+        t=setInterval(
+                function(){
+                    $('.gywm_next span').click();
+                },5000
+        );
+        $('.gywm_ry_banner_ul').hover(
+                function(){clearInterval(t)},
+                function(){
+                    t=setInterval(
+                            function(){
+                                $('.gywm_next span').click();
+                            },5000
+                    );
+                }
+        )
+    });
+    $(function(){
+        gywmBanner();
+    });
+    //轮播图
+    function gywmBanner(){
+        var length = $(".gywm_ry_banner_ul li").length;
+        var l=$('.gywm_ry_banner_ul li').width();
+        console.log(l);
+        console.log(length);
+        $('.gywm_prev span').click(function(){
+            $('.gywm_ry_banner_ul ul').prepend($('.gywm_ry_banner_ul li').eq(length-1));
+            $('.gywm_ry_banner_ul ul').css({left:-l});
+            $('.gywm_ry_banner_ul ul').animate({left:0});
+        });
+        $('.gywm_next span').click(function(){
+            $(".gywm_ry_banner_ul ul").append($(".gywm_ry_banner_ul li").eq(0));
+            $(".gywm_ry_banner_ul ul").css("left", 0);
+            $(".gywm_ry_banner_ul ul").stop().animate({"left" : -l});
+        });
+    }
+
+</script>
+</html>
